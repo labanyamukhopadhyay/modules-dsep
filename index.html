@@ -16,7 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Theme CSS -->
+  
   <link href="css/freelancer.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
 
 </head>
 
@@ -43,7 +48,7 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="ttps://ds-modules.github.io/modules-textbook/" style="color:#2c3e50" target="_blank">Modules Textbook</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://ds-connectors.github.io/" style="color:#2c3e50" target="_blank">Connectors</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://labanyamukhopadhyay.github.io/connectors-dsep/" style="color:#2c3e50" target="_blank">Connectors</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://data.berkeley.edu/" style="color:#2c3e50" target="_blank">CDSS</a>
@@ -113,8 +118,47 @@
     </div>
   </header>
 
+  <!-- About Section -->
+  <section class="page-section  text-secondary mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary">About Modules</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        
+          <p class="lead">Data science modules are short explorations into data science that give students the opportunity to work hands-on with a data set relevant to their course and receive some instruction on the principles of data analysis, statistics, and computing.
+            With help from the Data Science Modules development team, a module can be designed and taught in an existing course from any discipline or field.</p>
+        
+          <br>
+          <br>
+
+          <p class="lead">Modules are a great way for students to have a smooth and supported introduction to computing, statistics, and the tools used in data science, which are increasingly relevant across academic disciplines. They empower students to do their own research and pose their own questions using data and enable instructors to apply a new lens to their area of expertise.</p>
+          
+          <br>
+          <br>
+
+         
+          
+
+
+          
+        
+      </div>
+      
+
+    
+    </div>
+  </section>
+
   <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
+  <section class="page-section portfolio bg-primary" id="portfolio">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
@@ -139,7 +183,7 @@
                 
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/environ_just.png" alt="">
+            <img class="img-fluid" src="img/portfolio/envir_just.png" alt="">
             
           </div>
         </div>
@@ -164,7 +208,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/civ_conf.png" alt="">
+            <img class="img-fluid" src="img/portfolio/civil_conf.png" alt="">
           </div>
         </div>
 
@@ -176,7 +220,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/soc_inequal.png" alt="">
+            <img class="img-fluid" src="img/portfolio/social_inequal.png" alt="">
           </div>
         </div>
 
@@ -208,48 +252,19 @@
       <!-- /.row -->
 
       <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-primary" href="https://ds-modules.github.io/DS-Modules/library/" target="_blank">
-          Complete List of Modules
+        
+        <a class="btn btn-xl btn-outline-primary" href="https://labanyamukhopadhyay.github.io/moduleslibrary/" target="_blank">
+          Modules Library
         </a>
       </div>
 
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="page-section bg-primary text-secondary mb-0" id="about">
-    <div class="container">
-
-      <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary">About Modules</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        
-      </div>
-
-      <!-- About Section Content -->
-      <div class="row">
-        
-          <p class="lead">Data science modules are short explorations into data science that give students the opportunity to work hands-on with a data set relevant to their course and receive some instruction on the principles of data analysis, statistics, and computing.
-            With help from the Data Science Modules development team, a module can be designed and taught in an existing course from any discipline or field.</p>
-        
-          <br>
-          <br>
-
-          <p class="lead">Modules are a great way for students to have a smooth and supported introduction to computing, statistics, and the tools used in data science, which are increasingly relevant across academic disciplines. They empower students to do their own research and pose their own questions using data and enable instructors to apply a new lens to their area of expertise.</p>
-          
-          
-        
-      </div>
-      
-
-    
-    </div>
-  </section>
+  
 
 
-  <section class="page-section portfolio" id="contact">
+  <section class="page-section portfolio " id="contact">
     <div class="container">
 
       <!-- Contact Section Heading -->
@@ -267,7 +282,8 @@
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- https://www.formbackend.com/f/3b3183ba8407a3ba-->
-          <form action="https://formspree.io/xoqlvbay" onSubmit="window.location.reload(); sayThanks()" method="POST" target="_blank">
+          <form id = "contactform" action="https://formspree.io/xoqlvbay" onSubmit="window.location.reload(); sayThanks()" method="POST" target="_blank">
+            <input type="hidden" name="_next" value="http://mysite.com/#contact" />
             
             <div>
                 <div class="floating-label-form-group controls mb-0 pb-2">
@@ -282,8 +298,8 @@
             </div>
             <div>
                 <div class="form-group floating-label-form-group controls mb-0 pb-2"> 
-                    <label>Message</label>
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."> </textarea>
+                    
+                    <textarea class="form-control" type = "message" name="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message." required></textarea>
                     <p class="help-block text-danger"></p>
                 </div>
             </div>
@@ -299,14 +315,24 @@
   <script>
     function sayThanks(){
     document.getElementById("submitButton").value = "Thanks!";
-}
+    }
 
-  $(function() {
-    $('#registerform').submit(function(event) {
-    event.preventDefault();
-    $(this).submit();
-  }); 
-});
+    $(function() {
+      $('#registerform').submit(function(event) {
+      event.preventDefault();
+      $(this).submit();
+      }); 
+    });
+
+    $("#submitButton").on("click", function() {
+    message = $("#contactform").serialize();
+    $.ajax({
+        method: "POST",
+        
+    });
+    alert('Thanks for the email, we\'ll be in touch promptly.');
+    return false;
+    });
   </script>
 
   
@@ -385,23 +411,34 @@
                
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Environmental Justice engages environmental problems, community responses, and policy debate regarding “environmental justice” issues – essentially the race, class, and equity implications of environmental problems and policies. The course seeks to prepare students to critically analyze environmental outcomes and processes, providing frameworks for evaluating the equity implications of environmental policies and programs, and distributions of environmental amenities and burdens. Students will learn and apply statistical and Python programming skills to analyze the effects of race and environmental factors on health outcomes such as cardiovascular disease and asthma.</p>
-                <div> 
-                  <a class="btn btn-xl btn-outline-primary" href="https://github.com/ds-modules/ESPM-163ac" target="_blank">
+                <div class = "container"> 
+                  <div>
+                  <a class="btn btn-xl btn-outline-primary" href="" target="_blank" title="Github" data-toggle="popover" data-trigger="hover" data-content="Course Files">
                     <img src="img/github.svg"  alt=""> 
                   </a>
 
-                  <a class="btn btn-xl btn-outline-primary" href="https://datahub.berkeley.edu/hub/login?next=%2Fhub%2Fuser-redirect%2Finteract%3Faccount%3Dds-modules%26repo%3DESPM-163ac%26branch%3Dmaster%26path%3DLab1%2FLab1_Intro_to_Jupyter.ipynb" target="_blank">
+                  <a class="btn btn-xl btn-outline-primary" href="https://datahub.berkeley.edu/hub/login?next=%2Fhub%2Fuser-redirect%2Finteract%3Faccount%3Dds-modules%26repo%3DESPM-163ac%26branch%3Dmaster%26path%3DLab1%2FLab1_Intro_to_Jupyter.ipynb" title="DataHub" data-toggle="popover" data-trigger="hover" data-content="Student Files">
                     <img src="img/datahubbg.png"  alt="" width="40" height="40"> 
                   </a>
                 
-                  <a class="btn btn-xl btn-outline-primary" href="https://mybinder.org/v2/gh/ds-modules/ESPM-163ac/master?filepath=Lab1%2FLab1_Intro_to_Jupyter.ipynb" target="_blank">
+                  <a class="btn btn-xl btn-outline-primary" href="https://mybinder.org/v2/gh/ds-modules/ESPM-163ac/master?filepath=Lab1%2FLab1_Intro_to_Jupyter.ipynb" target="_blank" title="Binder" data-toggle="popover" data-trigger="hover" data-content="Instructor Files">
                     <img src="img/binderbg.png"  alt="" width="40" height="40">
                   </a>
 
-                
-                  <p> </p>
-          
+                  </div>
+
                 </div>
+                <p> </p>
+
+                <script>
+                    $(document).ready(function(){
+                        $('[data-toggle="popover"]').popover();   
+                    });
+                </script>
+          
+                
+
+                
                 
               </div>
             </div>
@@ -636,7 +673,7 @@
                 <!-- <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Linguistics 110</h2> -->
                 <!-- Icon Divider -->
                 <div class="divider-custom">
-                  <p class="portfolio-modal-title text-secondary text-uppercase mb-0">Regulation of Energy and the Environment</p>
+                  <p class="h2 text-secondary  mb-0">Regulation of Energy and the Environment</p>
                 </div>
                 <!-- Portfolio Modal - Image -->
                 <div class="divider-custom">
@@ -663,6 +700,7 @@
           
                 </div>
                 
+                
               </div>
             </div>
           </div>
@@ -670,6 +708,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -684,6 +724,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
 
