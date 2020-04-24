@@ -17,10 +17,15 @@
   
 
   <!-- Theme CSS -->
-  
-  <link href="css/freelancer.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link href="css/freelancer.min.css" rel="stylesheet">
+  
+  
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  
+  
   
   
   <!--  faviconit.com favicons -->
@@ -275,11 +280,26 @@
       <!-- Contact Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Us</h2>
 
+      <br>
+      <br>
       <!-- Icon Divider -->
       <div class="divider-custom">
-        <div class="divider-custom-line"></div>
+        
+        <p class="lead">Are you a UC Berkeley instructor and want to request a module?</p>
+        
+      </div>
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-primary " href="https://forms.gle/GvfpmSGXvmUKpLS96">
+          Request Module
+        </a>
+      </div>
+
+      <br>
+
+      <div class="divider-custom">
+       
         <p class="lead">If you are interested in leading a course or learning more fill out the form below!</p>
-        <div class="divider-custom-line"></div>
+        
       </div>
 
       <!-- Contact Section Form -->
@@ -393,6 +413,12 @@
   <!-- Portfolio Modals -->
 
   <!-- Portfolio Modal 1 -->
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+    });
+</script>
+
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
@@ -417,32 +443,31 @@
                 </div>
                
                 <!-- Portfolio Modal - Text -->
+                <p class="mb-5">This course was taught in Spring 2020 by Professor Dara O’Rourke.</p>
                 <p class="mb-5">Environmental Justice engages environmental problems, community responses, and policy debate regarding “environmental justice” issues – essentially the race, class, and equity implications of environmental problems and policies. The course seeks to prepare students to critically analyze environmental outcomes and processes, providing frameworks for evaluating the equity implications of environmental policies and programs, and distributions of environmental amenities and burdens. Students will learn and apply statistical and Python programming skills to analyze the effects of race and environmental factors on health outcomes such as cardiovascular disease and asthma.</p>
                 <div class = "container"> 
                   <div>
-                  <a class="btn btn-xl btn-outline-primary" href="" target="_blank" title="Github" data-toggle="popover" data-trigger="hover" data-content="Course Files">
+                  <a class="btn btn-xl btn-outline-primary" href="https://github.com/ds-modules/ESPM-163ac" target="_blank" title="Github" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Course Files">
                     <img src="img/github.svg"  alt=""> 
                   </a>
 
-                  <a class="btn btn-xl btn-outline-primary" href="https://datahub.berkeley.edu/hub/login?next=%2Fhub%2Fuser-redirect%2Finteract%3Faccount%3Dds-modules%26repo%3DESPM-163ac%26branch%3Dmaster%26path%3DLab1%2FLab1_Intro_to_Jupyter.ipynb" title="DataHub" data-toggle="popover" data-trigger="hover" data-content="Student Files">
+                  
+                
+                
+                  <a class="btn btn-xl btn-outline-primary" href="https://datahub.berkeley.edu/hub/login?next=%2Fhub%2Fuser-redirect%2Finteract%3Faccount%3Dds-modules%26repo%3DESPM-163ac%26branch%3Dmaster%26path%3DLab1%2FLab1_Intro_to_Jupyter.ipynb" title="DataHub" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Student Files">
                     <img src="img/datahubbg.png"  alt="" width="40" height="40"> 
                   </a>
                 
-                  <a class="btn btn-xl btn-outline-primary" href="https://mybinder.org/v2/gh/ds-modules/ESPM-163ac/master?filepath=Lab1%2FLab1_Intro_to_Jupyter.ipynb" target="_blank" title="Binder" data-toggle="popover" data-trigger="hover" data-content="Instructor Files">
+                  <a class="btn btn-xl btn-outline-primary" href="https://mybinder.org/v2/gh/ds-modules/ESPM-163ac/master?filepath=Lab1%2FLab1_Intro_to_Jupyter.ipynb" target="_blank" title="Binder" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Instructor Files">
                     <img src="img/binderbg.png"  alt="" width="40" height="40">
                   </a>
 
-                  </div>
+                </div>
 
                 </div>
                 <p> </p>
 
-                <script>
-                    $(document).ready(function(){
-                        $('[data-toggle="popover"]').popover();   
-                    });
-                  
-                </script>
+                
           
                 
 
@@ -454,6 +479,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 
   <!-- Portfolio Modal 2 -->
@@ -481,6 +507,7 @@
                 </div>
                
                 <!-- Portfolio Modal - Text -->
+                <p class="mb-5">This course was taught in Fall 2019 by Professor Robin Ball.</p>
                 <p class="mb-5">Environmental Justice engages environmental problems, community responses, and policy debate regarding “environmental justice” issues – essentially the race, class, and equity implications of environmental problems and policies. The course seeks to prepare students to critically analyze environmental outcomes and processes, providing frameworks for evaluating the equity implications of environmental policies and programs, and distributions of environmental amenities and burdens. Students will learn and apply statistical and Python programming skills to analyze the effects of race and environmental factors on health outcomes such as cardiovascular disease and asthma.</p>
                 <div> 
                   <a class="btn btn-xl btn-outline-primary" href="https://github.com/ds-modules/MCB-32" target="_blank">
@@ -533,6 +560,7 @@
                 </div>
                
                 <!-- Portfolio Modal - Text -->
+                <p class="mb-5">This course was taught in Fall 2019 by Professor Aila Matanock.</p>
                 <p class="mb-5">Exploration of rows, columns, and data visualizations of civil wars from the Uppsala Conflict Data Program (UCDP) Conflict Termination Dataset. Students have the ability to select their own conflict for analysis.</p>
                 <div> 
                   <a class="btn btn-xl btn-outline-primary" href="https://github.com/ds-modules/POLSCI-5" target="_blank">
@@ -585,6 +613,7 @@
                 </div>
                
                 <!-- Portfolio Modal - Text -->
+                <p class="mb-5">This course was taught in Fall 2019 by Professor Joanna Reed.</p>
                 <p class="mb-5">This module maps and visualizes socioeconomic and demographic variation across SF census tracts (using crowdsourced student data). Students go out into neighborhoods and make qualitative observations, and then compare to census data. Qualitative observations are mapped in the notebook.</p>
                 <div> 
                   <a class="btn btn-xl btn-outline-primary" href="https://github.com/ds-modules/SOC-130AC" target="_blank">
@@ -637,6 +666,7 @@
                 </div>
                
                 <!-- Portfolio Modal - Text -->
+                <p class="mb-5">This course was taught in Spring 2018 by Professor Rudy Mendoza-Denton.</p>
                 <p class="mb-5">Traditionally, research on prejudice and stereotyping has focused on the psychological mechanisms that lead people to be biased against others. Recent research has begun to shed light on the psychological legacy of prejudice and stereotyping for their targets. This course will review the major contributions of each of these literatures.</p>
                 <div> 
                   <a class="btn btn-xl btn-outline-primary" href="https://ds-modules.github.io/modules-textbook/psych-167ac/psych-167ac-intro.html" target="_blank">
