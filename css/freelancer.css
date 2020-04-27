@@ -77,6 +77,10 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  /* background-image: url('img/tower_resize.jpg');  */
+  width : 100%; 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
 }
 
 [tabindex="-1"]:focus {
@@ -386,6 +390,13 @@ template {
 [hidden] {
   display: none !important;
 }
+
+/* header.bgimage {
+  background-image: url('img/tower_resize.jpg'); 
+  width : 100%; 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+} */
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -8875,9 +8886,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+
+
 .masthead {
   padding-top: 300px;
   padding-bottom: 4rem;
+  
 }
 
 .masthead .masthead-heading {
