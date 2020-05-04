@@ -622,7 +622,7 @@ pre code {
 
 @media (max-width: 600px) {
   header {
-    background-image: url("img/tower_resize_mobile.jpg") !important; 
+    background-image: url("img/tower_mobile_bg.jpg") !important; 
     width : 100%; 
     background-repeat: no-repeat; 
     background-size: 100% 100%;
@@ -3330,12 +3330,12 @@ input[type="button"].btn-block {
     display: none;
   }
   
-  body {
+  /* body {
     background-image: url('img/tower_mobile_bg.png') !important; 
     width : 100%; 
     background-repeat: no-repeat; 
     background-size: 100% 100%;
-  } 
+  }  */
 }
 
 @media (max-width: 767.98px) {
