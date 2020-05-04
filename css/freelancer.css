@@ -620,9 +620,9 @@ pre code {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   header {
-    background-image: url("img/tower_resize_mobile.jpg");
+    background-image: url("img/tower_resize_mobile.jpg") !important; 
     width : 100%; 
     background-repeat: no-repeat; 
     background-size: 100% 100%;
@@ -2065,6 +2065,27 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.github-logo {
+  width: 80px;
+  height: 60px;
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  
+}
+
+.github-logo .github-hover {
+  display: none;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 99;
+}
+
+.github-logo:hover .github-hover {
+  display: inline;
+}
+
 .fade {
   transition: opacity 0.15s linear;
 }
@@ -3310,11 +3331,12 @@ input[type="button"].btn-block {
   }
   
   body {
-    background-image: url('img/tower_resize_mobile.jpg');
+    background-image: url('img/tower_mobile_bg.png') !important; 
     width : 100%; 
     background-repeat: no-repeat; 
     background-size: 100% 100%;
-} }
+  } 
+}
 
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
