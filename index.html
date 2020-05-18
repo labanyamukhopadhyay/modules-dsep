@@ -57,13 +57,13 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " href="https://ds-modules.github.io/DS-Modules/guide/" style="color:#2c3e50" target="_blank">DSEP</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="ttps://ds-modules.github.io/modules-textbook/" style="color:#2c3e50" target="_blank">Modules Textbook</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://ds-modules.github.io/modules-textbook/" style="color:#2c3e50" target="_blank">Modules Textbook</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://labanyamukhopadhyay.github.io/connectors-dsep/" style="color:#2c3e50" target="_blank">Connectors</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://data.berkeley.edu/" style="color:#2c3e50" target="_blank">CDSS</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://ds-modules.github.io/curriculum-guide/intro.html" style="color:#2c3e50" target="_blank">Curriculum Guide</a>
           </li>
           
         </ul>
@@ -131,7 +131,7 @@
   </header>
 
   <!-- About Section -->
-  <section class="page-section portfolio" id="contact">
+  <section class="page-section portfolio" id="about">
     <div class="container">
 
       <!-- About Section Heading -->
@@ -159,15 +159,7 @@
 
         </div>
          
-          
-
-
-          
-        
       </div>
-      
-
-    
     </div>
   </section>
 
@@ -190,6 +182,10 @@
 
         <!-- Portfolio Item 1 -->
         <div class="col-md-6 col-lg-4">
+          <div class="text-center mt-4">
+            <img src="img/gh-nobg.png" style= "width:42px;height:42px;">
+            <p class = "text-secondary"> Github </p>
+          </div>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -204,6 +200,10 @@
 
         <!-- Portfolio Item 2 -->
         <div class="col-md-6 col-lg-4">
+          <div class="text-center mt-4">
+            <img src="img/datahubbg.png" style="width:42px;height:42px;">
+            <p class = "text-secondary"> Datahub </p>
+          </div>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -216,6 +216,10 @@
 
         <!-- Portfolio Item 3 -->
         <div class="col-md-6 col-lg-4">
+          <div class="text-center mt-4">
+            <img src="img/bindernobg.png" style="width:42px;height:42px;">
+            <p class = "text-secondary"> MyBinder </p>
+          </div>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -311,8 +315,10 @@
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- https://www.formbackend.com/f/3b3183ba8407a3ba-->
-          <form id = "contactform" action="https://formspree.io/xoqlvbay" onSubmit="sayThanks(); window.location.reload()" method="POST" target="_blank">
-            <input type="hidden" name="_next" value="http://mysite.com/#contact" />
+          <iframe name="hiddenFrame" width="0" height="0" style="display: none;"></iframe>
+
+          <form id = "contactform" action="https://formspree.io/xoqlvbay"  onSubmit="sayThanks(); window.location.reload()" method="POST" target = "_blank" >
+            <input type="hidden" name="_next" value="https://labanyamukhopadhyay.github.io/modules-dsep/#contact" />
             
             <div>
                 <div class="floating-label-form-group controls mb-0 pb-2">
@@ -334,9 +340,10 @@
             </div>
             <br>
             <div class = 'text-center'>
-            <input type="submit" id="submitButton" value="Send" class="btn btn-primary btn-xl">
-          </div>
+              <input type="submit" id="submitButton" value="Send" class="btn btn-primary btn-xl">
+            </div>
           </form>
+          
         </div>
       </div>
 
@@ -346,26 +353,27 @@
   <script>
     function sayThanks(){
     document.getElementById("submitButton").value = "Thanks!";
+    
     }
 
-    $(function() {
-      $('#registerform').submit(function(event) {
-      event.preventDefault();
-      $(this).submit();
-      }); 
-    });
+    // $(function() {
+    //   $('#registerform').submit(function(event) {
+    //   event.preventDefault();
+    //   $(this).submit();
+    //   }); 
+    // });
 
-    $("#submitButton").on("click", function() {
-    message = $("#contactform").serialize();
-    $.ajax({
-        method: "POST",
-        action: "https://formspree.io/xoqlvbay"
+    // $("#submitButton").on("click", function() {
+    // message = $("#contactform").serialize();
+    // $.ajax({
+    //     method: "POST",
+    //     url: "https://formspree.io/xoqlvbay"
       
-    });
-    alert('Thanks for the email, we\'ll be in touch promptly.');
-    window.location.reload();
-    return false;
-    });
+    // });
+    // // alert('Thanks for the email, we\'ll be in touch promptly.');
+    // window.location.reload();
+    // // return false;
+    // });
   </script>
 
   
